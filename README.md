@@ -6,6 +6,8 @@ Current features:
 * Login and Registration
 * Address book functionality
 * Private Message Functionality
+* Uses SQLLite3
+* Logs all activity to ./log.txt
 
 Known Bugs:
 * Private messages inbox not working
