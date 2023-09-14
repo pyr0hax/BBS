@@ -1,6 +1,6 @@
 # BBS written in Python
 
-Version 1.01889
+Version 1.03004
 
 Current features:
 * Login and Registration
@@ -8,14 +8,14 @@ Current features:
 * Private Message Functionality
 * Uses SQLLite3
 * Logs all activity to ./log.txt
+* Forum section
 
 Known Bugs:
-* Private messages inbox not working
-* delete address book not working
+* Speed not showing correctly
 
 Functions to add:
-* Forum section
-* Show how many users are active in main menu
+* Add posts with Nano
+* Reply to posts with Nano
 * reply back to inbox messages
 * Add a simple text based game
 * Add modem connector for Dialup
