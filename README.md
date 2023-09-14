@@ -1,6 +1,8 @@
 # BBS written in Python
 
 Version 1.01889
+
+Current features:
 * Login and Registration
 * Address book functionality
 * Private Message Functionality
