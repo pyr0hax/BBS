@@ -14,7 +14,7 @@ unread_messages = 0
 def log_activity(message):
     current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     log_entry = f"[{current_time}] {message}\n"
-    with open(LOG_FILE, 'a') as log_file:
+    with open(LOG_FILE, 'a', encoding='utf-8') as log_file:
         log_file.write(log_entry)
 
 def create_database():
@@ -202,7 +202,7 @@ def show_address_book(client_socket):
 
 def inbox(client_socket, username):
     messages_received = get_private_messages(username)
-    client_socket.send(b"\r\nInbox:\r\n")
+    client_socket.send("\r\nInbox:\r\n".encode('utf-8'))
     client_socket.send(b"\r\nReceived Messages:\r\n")
     if messages_received:
         for message_id, sender, _, message in messages_received:
@@ -306,7 +306,7 @@ def handle_client(client_socket):
                 return
 
             if authenticated_user:
-                client_socket.send(main_menu)
+                client_socket.send(main_menu.encode('utf-8'))
                 choice = read_characters(client_socket)
 
                 if choice.strip() == '1':
