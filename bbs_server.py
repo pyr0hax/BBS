@@ -1,10 +1,7 @@
 import socket
 import threading
-import time
 import sqlite3
 import datetime
-import subprocess
-import os
 
 DB_FILE = 'bbs.db'
 LOG_FILE = 'log.txt'

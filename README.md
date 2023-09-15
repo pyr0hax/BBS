@@ -1,6 +1,6 @@
 # BBS written in Python
 
-Version 1.03004
+Version 1.03532
 
 Current features:
 * Login and Registration
